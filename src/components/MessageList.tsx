@@ -3,7 +3,7 @@ import {IMessage, IUserListProps} from "../Interface";
 import Axios from "axios";
 import {host} from "../Common";
 
-const UserList = (props: IUserListProps) => {
+const MessageList = (props: IUserListProps) => {
 
     const source = new EventSource(host + "/api/user/message/2");
 
@@ -22,4 +22,4 @@ const UserList = (props: IUserListProps) => {
     )
 }
 
-export default UserList
+export default MessageList
