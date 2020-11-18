@@ -4,3 +4,4 @@ export enum MessageActions {
     remove,
     add
 }
+

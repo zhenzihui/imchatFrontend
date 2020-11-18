@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createStore} from "redux";
+import ChatApp from "./reducers/AppReducer";
+import {Provider} from "react-redux";
+import Axios from "axios";
+// @ts-ignore
+let store = createStore(ChatApp)
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Provider store={store}>
+          <App />
+      </Provider>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

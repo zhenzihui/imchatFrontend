@@ -1,15 +1,15 @@
 import {connect} from 'react-redux'
-import {IMessageListState} from "../Interface";
-import MessageList from "../components/MessageList";
+import {IUserListProps} from "../Interface";
+import UserList from "../components/UserList";
 import {ComponentType} from "react";
 
-const mapStateToProps = (state: IMessageListState) => {
+const mapStateToProps = (state: IUserListProps) => {
     return {
-        messages: state.messages
+        users: state.users
     }
 }
 
 
 export default connect(
     mapStateToProps
-)(MessageList as ComponentType)
+)(UserList as ComponentType)
