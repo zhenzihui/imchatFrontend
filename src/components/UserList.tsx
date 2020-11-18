@@ -2,12 +2,11 @@ import React from "react";
 import {IUserListProps} from "../Interface";
 // @ts-ignore
 import {Get} from 'react-axios'
-import {host} from "../Common";
 import Axios from "axios";
 
 const UserList = (props: IUserListProps) => {
     const instance = Axios.create({
-        baseURL: `${host}/api`,
+        baseURL: `api`,
         timeout: 2000,
         headers: {
             'Access-Control-Allow-Origin': '*'
