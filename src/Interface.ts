@@ -1,3 +1,5 @@
+import {Component, ReactElement} from "react";
+
 export interface IUserListProps {
     users: IUser[],
 }
@@ -26,5 +28,9 @@ export interface IMessage {
     channelId: string,
     createOn: number
 
+}
+
+export interface IRoutesProps {
+    children: ReactElement
 }
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createStore} from "redux";
 import ChatApp from "./reducers/AppReducer";
 import {Provider} from "react-redux";
-import Axios from "axios";
+import BottomBar from "./components/BottomBar";
+import Routes from "./Routes";
 // @ts-ignore
 let store = createStore(ChatApp)
 
@@ -14,9 +14,8 @@ let store = createStore(ChatApp)
 ReactDOM.render(
   <React.StrictMode>
       <Provider store={store}>
-          <App />
+          <Routes />
       </Provider>
-
   </React.StrictMode>,
   document.getElementById('root')
 );

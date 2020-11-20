@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import UserListContainer from "./containers/UserListContainer";
+import BottomBar from "./components/BottomBar";
 
 function App() {
   return (
     <div className="App">
-      <UserListContainer/>
+      HomePage
+      <BottomBar/>
     </div>
+
   );
 }
 
